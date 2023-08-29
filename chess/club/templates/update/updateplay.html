@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+        <h1>Update Player</h1>
+        <form action="{% url 'uprecplay' mm.id %}" method="post">
+            {% csrf_token %}
+            <label>name</label><br><br>
+            <input type="text" name="name" value="{{mm.name}}"><br><br>
+            <button type="submit">Update</button>
+        </form>
+</body>
+</html>

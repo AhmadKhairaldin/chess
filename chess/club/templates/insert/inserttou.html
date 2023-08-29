@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+ <form  name="register" method="post" action="../inserttou/">
+        {% csrf_token %}
+        <h1>welcom</h1>
+        <pre>
+            id :<input type="text" name="id" value="" width="200"><br>
+            name :<input type="text" name="name" value="" width="200"><br>
+            club_id :<input type="text" name="club_id" value="" width="200"><br>
+            <input type="submit" name="reg" value="Enter to add"  width="300" height="100">
+        </pre>
+    </form>
+</body>
+</html>

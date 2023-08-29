@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+<h2 class="text-center">chosse what you see</h2>
+<div class="container text-center mt-5">
+  <div class="row">
+    <div class="col-md-6 mb-5">
+        <a href="{% url 'showtour'%}"><button type="button" class="btn btn-primary">tournament</button></a>
+    </div>
+    <div class="col-md-6">
+        <a href="{% url 'showplay'%}"><button type="button" class="btn btn-primary">player</button></a>
+    </div>
+    <div class="col-md-6">
+        <a href="{% url 'showmem'%}"><button type="button" class="btn btn-primary">member</button></a>
+    </div>
+      <div class="col-md-6">
+        <a href="{% url 'showmat'%}"><button type="button" class="btn btn-primary"> match</button></a>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
